@@ -1,0 +1,44 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Manguezal do Itacorubi",
+        "status": "Crítico",
+        "descricao": "Um dos manguezais urbanos mais importantes de Florianópolis, sofrendo com a poluição e urbanização.",
+        "imagem_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Manguezal_do_Itacorubi_em_Florian%C3%B3polis.JPG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-48.5150, -27.5935]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Manguezal do Rio Tavares",
+        "status": "Requer Atenção",
+        "descricao": "Localizado no sul da ilha, este manguezal é pressionado pela expansão imobiliária, mas ainda abriga rica biodiversidade.",
+        "imagem_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Rio_Tavares_mangue.JPG"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-48.5000, -27.6500]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Manguezal de Ratones",
+        "status": "Saudável",
+        "descricao": "Parte da Estação Ecológica de Carijós, é uma das áreas de mangue mais preservadas da ilha.",
+        "imagem_url": "https://live.staticflickr.com/5017/5472714574_f906f3450e_b.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-48.5283, -27.4750]
+      }
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+/* --- Importa as Fontes --- */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Inter:wght@400;700&display=swap');
+
+/* --- Estilos Globais e do Corpo --- */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fdf6f0; 
+    color: #333;
+    padding-top: 100px; 
+}
+
+/* --- Cabeçalho Personalizado --- */
+.custom-header {
+    background-color: #ffffff; 
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Título */
+.main-title {
+    font-family: 'Baloo 2', cursive; 
+    font-weight: 800; 
+    color: #00796b; 
+    font-size: 3.2em; 
+    line-height: 1.1; 
+}
+
+/* --- Layout Principal --- */
+.main-content-row {
+    height: calc(100vh - 100px); 
+}
+
+/* --- Estilo do Mapa --- */
+#map {
+    height: 100%; 
+    width: 100%;
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #eee;
+}
+
+/* --- Estilo dos Cards de Informação --- */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #eee; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+}
+
+.card-title {
+    font-family: 'Baloo 2', cursive; 
+    font-weight: 800;
+    color: #004d40; 
+    font-size: 1.5em; 
+}
+
+.card-text, .card-body p {
+    color: #555; 
+    line-height: 1.6;
+}
+
+/* --- Estilo dos Pop-ups --- */
+.leaflet-popup-content-wrapper {
+    background: #fff;
+    color: #333;
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.leaflet-popup-tip {
+    background: #fff;
+}
+.leaflet-popup-content {
+    line-height: 1.6;
+}
+.leaflet-popup-content h3 {
+    font-family: 'Baloo 2', cursive; 
+    font-weight: 800;
+    color: #00796b;
+    margin-bottom: 10px;
+}
+.leaflet-popup-content p {
+    color: #555;
+}
+.leaflet-popup-content img {
+    width: 100%; 
+    border-radius: 8px; 
+    margin-top: 10px;
+}
+
+
+/* --- ESTILOS DOS ÍCONES (COM CORES PASTEIS) --- */
+
+/* Base para os ícones do mapa (L.DivIcon) */
+.div-icon-base {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    border: 3px solid #fff; 
+    font-size: 1.5em; 
+    line-height: 1;
+}
+
+/* NOVAS Cores específicas (Pastel) */
+.icone-mangue-verde {
+    background-color: #A5D6A7; /* Verde Pastel */
+    color: #E8F5E9; /* Cor do emoji (verde bem claro) */
+}
+.icone-mangue-amarelo {
+    background-color: #FFF59D; /* Amarelo Pastel */
+    color: #FFFDE7; /* Cor do emoji (amarelo bem claro) */
+}
+.icone-mangue-vermelho {
+    background-color: #EF9A9A; /* Vermelho/Rosa Pastel */
+    color: #FFEBEE; /* Cor do emoji (rosa bem claro) */
+}
+
+/* Estilo para os ícones da LEGENDA */
+.legenda-icone {
+    display: inline-block; 
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    vertical-align: middle; 
+}

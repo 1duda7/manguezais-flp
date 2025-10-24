@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa dos Manguezais - Florianópolis</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="custom-header">
+        <div class="container text-center py-3">
+            <h1 class="main-title">Manguezais de Florianópolis</h1>
+        </div>
+    </header>
+
+    <div class="container-fluid main-content-row">
+        <div class="row h-100">
+            
+            <div class="col-md-8 h-100 p-3">
+                <div id="map"></div> </div>
+
+            <div class="col-md-4 h-100 p-3" style="overflow-y: auto;">
+                
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">O que é um Manguezal?</h5>
+                        <p class="card-text">
+                            O manguezal é um ecossistema costeiro, de transição entre os ambientes terrestre e marinho. 
+                            É típico de regiões tropicais e subtropicais.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Por que são importantes?</h5>
+                        <p class="card-text">
+                            Eles atuam como "berçários" para espécies marinhas, protegem a costa contra 
+                            a erosão e tempestades, e filtram poluentes da água.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Legenda</h5>
+                        
+                        <p>
+                            <span class="legenda-icone icone-mangue-verde"></span>
+                            <strong>Saudável:</strong> Área preservada.
+                        </p>
+                        
+                        <p>
+                            <span class="legenda-icone icone-mangue-amarelo"></span>
+                            <strong>Requer Atenção:</strong> Área sob pressão.
+                        </p>
+                        
+                        <p>
+                            <span class="legenda-icone icone-mangue-vermelho"></span>
+                            <strong>Crítico:</strong> Área com degradação.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="map.js"></script>
+
+</body>
+</html>
