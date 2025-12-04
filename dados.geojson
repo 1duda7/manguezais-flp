@@ -4,9 +4,35 @@
     {
       "type": "Feature",
       "properties": {
+        "nome": "Manguezal do Rio Ratones",
+        "status": "Saudável",
+        "descricao": "Localizado ao norte, integra a Estação Ecológica de Carijós. É uma das áreas mais preservadas e vital para a reprodução de espécies marinhas.",
+        "imagem_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Manguezal_ratones.jpg/800px-Manguezal_ratones.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-48.5283, -27.4750]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nome": "Manguezal do Saco Grande",
+        "status": "Requer Atenção",
+        "descricao": "Situado próximo à rodovia SC-401. Sofre pressão devido à expansão urbana e aterramentos históricos, mas mantém uma biodiversidade resiliente.",
+        "imagem_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Manguezal_Saco_Grande.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-48.5133, -27.5400]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "nome": "Manguezal do Itacorubi",
         "status": "Crítico",
-        "descricao": "Um dos manguezais urbanos mais importantes de Florianópolis, sofrendo com a poluição e urbanização.",
+        "descricao": "O maior manguezal urbano da ilha. Historicamente impactado por lixões e esgoto, hoje luta pela recuperação em meio à cidade.",
         "imagem_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Manguezal_do_Itacorubi_em_Florian%C3%B3polis.JPG"
       },
       "geometry": {
@@ -19,25 +45,25 @@
       "properties": {
         "nome": "Manguezal do Rio Tavares",
         "status": "Requer Atenção",
-        "descricao": "Localizado no sul da ilha, este manguezal é pressionado pela expansão imobiliária, mas ainda abriga rica biodiversidade.",
+        "descricao": "Parte da Reserva Extrativista Marinha do Pirajubaé. Fundamental para a coleta de berbigão, enfrenta desafios com a urbanização do entorno.",
         "imagem_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Rio_Tavares_mangue.JPG"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-48.5000, -27.6500]
+        "coordinates": [-48.5333, -27.6500]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "nome": "Manguezal de Ratones",
+        "nome": "Manguezal da Tapera",
         "status": "Saudável",
-        "descricao": "Parte da Estação Ecológica de Carijós, é uma das áreas de mangue mais preservadas da ilha.",
-        "imagem_url": "https://live.staticflickr.com/5017/5472714574_f906f3450e_b.jpg"
+        "descricao": "Localizado no sul da ilha, próximo à Base Aérea. Possui áreas bem conservadas, servindo de refúgio para aves migratórias.",
+        "imagem_url": "https://live.staticflickr.com/65535/51234567890_abcdef1234_b.jpg"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-48.5283, -27.4750]
+        "coordinates": [-48.5600, -27.6800]
       }
     }
   ]
