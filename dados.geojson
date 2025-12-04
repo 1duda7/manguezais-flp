@@ -7,7 +7,7 @@
         "nome": "Manguezal do Rio Ratones",
         "status": "Saudável",
         "descricao": "Localizado ao norte, integra a Estação Ecológica de Carijós. É uma das áreas mais preservadas e vital para a reprodução de espécies marinhas.",
-        "imagem_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Manguezal_ratones.jpg/800px-Manguezal_ratones.jpg"
+        "imagem_url": "img/ratones.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -20,7 +20,7 @@
         "nome": "Manguezal do Saco Grande",
         "status": "Requer Atenção",
         "descricao": "Situado próximo à rodovia SC-401. Sofre pressão devido à expansão urbana e aterramentos históricos, mas mantém uma biodiversidade resiliente.",
-        "imagem_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Manguezal_Saco_Grande.jpg"
+        "imagem_url": "img/saco grande.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -33,7 +33,7 @@
         "nome": "Manguezal do Itacorubi",
         "status": "Crítico",
         "descricao": "O maior manguezal urbano da ilha. Historicamente impactado por lixões e esgoto, hoje luta pela recuperação em meio à cidade.",
-        "imagem_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Manguezal_do_Itacorubi_em_Florian%C3%B3polis.JPG"
+        "imagem_url": "img/itacorubi.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -46,7 +46,7 @@
         "nome": "Manguezal do Rio Tavares",
         "status": "Requer Atenção",
         "descricao": "Parte da Reserva Extrativista Marinha do Pirajubaé. Fundamental para a coleta de berbigão, enfrenta desafios com a urbanização do entorno.",
-        "imagem_url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Rio_Tavares_mangue.JPG"
+        "imagem_url": "img/rio tavares.jpg"
       },
       "geometry": {
         "type": "Point",
@@ -59,7 +59,7 @@
         "nome": "Manguezal da Tapera",
         "status": "Saudável",
         "descricao": "Localizado no sul da ilha, próximo à Base Aérea. Possui áreas bem conservadas, servindo de refúgio para aves migratórias.",
-        "imagem_url": "https://live.staticflickr.com/65535/51234567890_abcdef1234_b.jpg"
+        "imagem_url": "img/tapera.jpg"
       },
       "geometry": {
         "type": "Point",
