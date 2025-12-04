@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <link rel="stylesheet" href="style.css">
@@ -16,8 +15,11 @@
 <body>
 
     <header class="custom-header">
-        <div class="container text-center py-3">
-            <h1 class="main-title">Manguezais de Florianópolis</h1>
+        <div class="container position-relative d-flex align-items-center justify-content-center py-2">
+            
+            <img src="img/guara.jpg" alt="Mascote Guará" class="mascote-header position-absolute start-0 ms-4">
+            
+            <h1 class="main-title mb-0">Manguezais de Florianópolis</h1>
         </div>
     </header>
 
@@ -25,10 +27,22 @@
         <div class="row h-100">
             
             <div class="col-md-8 h-100 p-3">
-                <div id="map"></div> </div>
+                <div id="map"></div>
+            </div>
 
             <div class="col-md-4 h-100 p-3" style="overflow-y: auto;">
                 
+                <div class="card mb-3 card-destaque">
+                    <div class="card-body text-center">
+                        <img src="img/passarinho.jpg" alt="Mascote Azul" class="mascote-card mb-2">
+                        
+                        <h5 class="card-title">Você Sabia?</h5>
+                        <p class="card-text">
+                            Os manguezais são berçários naturais! Muitas aves, como eu, dependem deles para encontrar alimento e abrigo seguro.
+                        </p>
+                    </div>
+                </div>
+
                 <div class="card mb-3">
                     <div class="card-body">
                         <h5 class="card-title">O que é um Manguezal?</h5>
@@ -52,21 +66,9 @@
                 <div class="card mb-3">
                     <div class="card-body">
                         <h5 class="card-title">Legenda</h5>
-                        
-                        <p>
-                            <span class="legenda-icone icone-mangue-verde"></span>
-                            <strong>Saudável:</strong> Área preservada.
-                        </p>
-                        
-                        <p>
-                            <span class="legenda-icone icone-mangue-amarelo"></span>
-                            <strong>Requer Atenção:</strong> Área sob pressão.
-                        </p>
-                        
-                        <p>
-                            <span class="legenda-icone icone-mangue-vermelho"></span>
-                            <strong>Crítico:</strong> Área com degradação.
-                        </p>
+                        <p><span class="legenda-icone icone-mangue-verde"></span> <strong>Saudável:</strong> Área preservada.</p>
+                        <p><span class="legenda-icone icone-mangue-amarelo"></span> <strong>Requer Atenção:</strong> Área sob pressão.</p>
+                        <p><span class="legenda-icone icone-mangue-vermelho"></span> <strong>Crítico:</strong> Área com degradação.</p>
                     </div>
                 </div>
 
