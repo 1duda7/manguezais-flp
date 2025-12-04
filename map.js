@@ -69,7 +69,13 @@ fetch('dados.geojson')
                         <p>${feature.properties.descricao}</p>
                         <img src="${feature.properties.imagem_url}" alt="Foto de ${feature.properties.nome}">
                     `;
-                    layer.bindPopup(popupContent);
+                    
+                    // AQUI ESTÁ A MUDANÇA MÁGICA:
+                    layer.bindPopup(popupContent, {
+                        autoPan: true,             // Garante que o mapa se mova
+                        autoPanPadding: [50, 50],  // Adiciona uma margem de 50px (cima/baixo e lados)
+                        keepInView: true           // Tenta manter o popup dentro do container
+                    });
                 }
             }
         }).addTo(map);
