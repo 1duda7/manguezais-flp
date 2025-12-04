@@ -4,14 +4,14 @@
 /* --- Estilos Globais --- */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #266b16; 
+    background-color: #266b16; /* Sua cor personalizada */
     color: #333;
     padding-top: 100px; 
 }
 
 /* --- Cabeçalho Personalizado --- */
 .custom-header {
-    background-color: #caddbc; 
+    background-color: #caddbc; /* Sua cor personalizada */
     border-bottom: 1px solid #a2bbb6;
     position: fixed;
     top: 0;
@@ -53,9 +53,24 @@ body {
     border: 2px dashed #80CBC4; 
 }
 
-/* --- Layout Principal --- */
+/* --- Layout Principal (Desktop Padrão) --- */
 .main-content-row {
     height: calc(100vh - 100px); 
+    overflow: hidden; /* No desktop, esconde a barra de rolagem da página inteira */
+}
+
+.h-100-desktop {
+    height: 100%;
+}
+
+/* Colunas no Desktop */
+.map-column {
+    height: 100%;
+}
+
+.info-column {
+    height: 100%;
+    overflow-y: auto; /* Scroll apenas aqui no desktop */
 }
 
 /* --- Mapa --- */
@@ -134,4 +149,52 @@ body {
     border: 2px solid #fff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     vertical-align: middle; 
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE (AJUSTES PARA CELULAR)
+   Estas regras só funcionam se a tela for menor que 768px (Tablets e Celulares)
+   ========================================================================== */
+@media (max-width: 768px) {
+    
+    body {
+        padding-top: 90px; /* Reduz um pouco o espaço do topo */
+        height: auto; /* Permite que o corpo cresça com o scroll */
+    }
+
+    /* Ajusta o título para não ficar gigante no celular */
+    .main-title {
+        font-size: 1.8em; 
+        line-height: 1.2;
+    }
+    
+    /* Mascote do Header no celular: diminui um pouco e ajusta margem */
+    .mascote-header {
+        height: 50px;
+        /* Como estamos usando position absolute, ajustamos a posição se necessário */
+        left: 10px !important; /* Força um pouco mais pro canto */
+    }
+
+    /* Quebra a altura fixa do layout principal */
+    .main-content-row {
+        height: auto; 
+        overflow: visible;
+    }
+    
+    /* Remove a altura de 100% da linha no celular */
+    .h-100-desktop {
+        height: auto;
+    }
+
+    /* O Mapa agora tem altura fixa (metade da tela) */
+    .map-column {
+        height: 50vh; /* 50% da altura da tela */
+        min-height: 350px; /* Garante que não fique muito pequeno */
+    }
+
+    /* A coluna de infos volta ao fluxo normal (embaixo do mapa) */
+    .info-column {
+        height: auto; 
+        overflow-y: visible;
+    }
 }
